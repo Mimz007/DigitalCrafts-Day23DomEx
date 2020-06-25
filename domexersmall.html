@@ -1,0 +1,24 @@
+<html>
+<body>
+    <h1 id="heading"></h1>
+    <ul id="list">
+      <li id="lettuce" class="green list-item">Lettuce</li>
+      <li id="tomato" class="red list-item">Tomato</li>
+      <li id="cheese" class="yellow list-item">Cheese</li>
+      <li id="burger">Burger</li>
+    </ul>
+</body>
+    <h1>Toppings</h1>
+    <div 
+        class="list-item">
+    </div>
+    <script>
+        let newline = document.createElement("li");
+        let newline2 = document.createTextNode("This is the new line");
+        newline.appendChild(newline2);
+        document.body.appendChild(newline)
+        console.log(newline2)
+
+    </script>
+</body>
+</html>

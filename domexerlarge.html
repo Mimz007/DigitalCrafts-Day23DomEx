@@ -1,0 +1,70 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            ABOUT ME (JAVASCRIPT/CSS ONLY)
+        </title>
+        <link rel="stylesheet" href="style.css" />
+        <div class="row">
+          <ul class="main-nav">
+              <li> <a href="domexerlarge.html"> Home </a></li>
+              <li> <a href=""> Description </a></li>
+              <li> <a href=""> Likes </a></li>
+              <li> <a href=""> Dislikes </a></li>
+          </ul> 
+        </div>
+    </head>
+    <body>
+        <h1>Amy Lazos</h1>
+        <div class="content" id="mainDiv">
+          <section>
+                <h2>About Me</h2>
+                <p class="extra"></p>
+            </section>
+            <section>
+                <img src="AmyLazos.png"/>
+                <p></p>
+                <p i ="extra"></p>
+            </section>
+            <section>
+                <h2>MY LIKES AND DISLIKES</h2>
+                  <div>
+                  <h3>LIKES</h3>
+                  <ul>
+                    <li>Word Puzzles</li>
+                    <li>Flower Arranging</li>
+                    <li>Shopping</li>
+                    <li>SelfHelp Audio Books</li>
+                  </ul>
+                  </div>
+                <h3>DISLIKES</h3>
+                <ul>
+                  <li>Movie Theaters</li>
+                  <li>Traffic</li>
+                  <li>When my dog baby stares at me while I eat</li>
+                </ul>
+                </div>                
+            </section>
+        </div>
+        <script>
+            console.log(document.getElementsByTagName("extra"))
+            let item = document.getElementById("first.name")
+            console.log(item)
+            console.log(item)
+            console.log(document.querySelector('.extra'))
+            console.log(document.querySelectorAll('.extra'))
+
+            let aHTMLCollection = document.getElementsByClassName ('extra')
+            let aExtraItem = aHTMLCollection[0];
+
+            aExtraItem.style = "background: red; font-weight:bold"
+            console.dir(aExtraItem)
+            console.dir(aExtraItem.innerHTML)
+            aExtraItem.setAttribute("style", "border: 8px dashed solid pink;")
+            aExtraItem.innerHTML = 
+            "<h3>Lorem ipsum dolor sit, amet consectetur adipisicing elitExcepturi neque numquam officiis ipsam aperiam reprehend praesentium beatae quae harum suscipit iusto facilis nostru placeat totam, aspernatur eius soluta quasi saepe.</h3>"
+            console.dir(aExtraItem.firstChild)
+            
+        </script>
+    </body>
+</html>
